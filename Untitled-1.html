@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Pokémon Iniciales</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&family=Roboto&display=swap" rel="stylesheet">
+
+<style>
+body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background: linear-gradient(135deg, #89f7fe, #66a6ff);
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    display:flex;
+    gap:30px;
+}
+
+.card{
+    width:260px;
+    background-color:#f5f5f5;
+    border-radius:20px;
+    text-align:center;
+    padding:20px;
+
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+
+    transition: transform 0.3s;
+}
+
+.card:hover{
+    transform: scale(1.05);
+}
+
+.card img{
+    width:130px;
+    margin:10px 0;
+    filter: drop-shadow(0px 5px 5px rgba(0,0,0,0.3));
+}
+
+.card h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight:600;
+    font-size:24px;
+}
+
+.info{
+    text-align:left;
+    margin-top:10px;
+}
+
+.info p{
+    margin:5px 0;
+    font-size:15px;
+}
+
+.label{
+    font-weight:bold;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Charmander -->
+    <div class="card">
+        <h2>Charmander</h2>
+        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/4.png">
+        <div class="info">
+            <p><span class="label">Altura:</span> 0.6m</p>
+            <p><span class="label">Peso:</span> 8.5kg</p>
+            <p><span class="label">Categoría:</span> Lagartija</p>
+        </div>
+    </div>
+
+    <!-- Bulbasaur -->
+    <div class="card">
+        <h2>Bulbasaur</h2>
+        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png">
+        <div class="info">
+            <p><span class="label">Altura:</span> 0.7m</p>
+            <p><span class="label">Peso:</span> 6.9kg</p>
+            <p><span class="label">Categoría:</span> Semilla</p>
+        </div>
+    </div>
+
+    <!-- Squirtle -->
+    <div class="card">
+        <h2>Squirtle</h2>
+        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/7.png">
+        <div class="info">
+            <p><span class="label">Altura:</span> 0.5m</p>
+            <p><span class="label">Peso:</span> 9.0kg</p>
+            <p><span class="label">Categoría:</span> Tortuguita</p>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
